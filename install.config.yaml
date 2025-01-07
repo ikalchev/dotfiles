@@ -1,0 +1,29 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.config/fish:
+      path: fish
+      create: true
+    ~/.config/atuin:
+      path: atuin
+      create: true
+
+- shell:
+    -
+      command: "curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh"
+      stdin: true
+      stdout: true
+      stderr: true
+    - 
+      command: "uname -s | grep -q Darwin && curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | sh"
+      stdin: true
+      stdout: true
+      stderr: true
+    - [uname -s | grep -q Darwin && brew bundle install --file ./Brewfile]
+    - [chsh -s $(which fish)]
+    
