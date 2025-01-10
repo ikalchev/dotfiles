@@ -4,5 +4,11 @@ if status is-interactive
     # Extend the locations where fish looks for functions to
     # include "machine-specific" functions. For example, these
     # are functions not common between machines.
-    set -a fish_function_path ~/.config/more_fish 
+    set -a fish_function_path ~/.config/more_fish
+    
+    # Config the hydro prompt.
+    set --global hydro_color_pwd green
+    set --global hydro_color_git cyan
+    set --global hydro_color_prompt bryellow
+    set --global hydro_multiline true
 end
