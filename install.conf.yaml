@@ -6,11 +6,11 @@
 
 - link:
     ~/.vimrc: vimrc
-    ~/.config/fish:
-      path: fish
-      create: true
     ~/.config/atuin:
       path: atuin
+      create: true
+    ~/.config/fish:
+      path: fish
       create: true
 
 - shell:
@@ -24,6 +24,10 @@
       stdin: true
       stdout: true
       stderr: true
-    - [uname -s | grep -q Darwin && brew bundle install --file ./Brewfile]
+    -
+      command: "uname -s | grep -q Darwin && brew bundle install --file ./Brewfile"
+      stdin: true
+      stdout: true
+      stderr: true
     - [chsh -s $(which fish)]
     
