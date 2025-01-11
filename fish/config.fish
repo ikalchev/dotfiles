@@ -1,13 +1,13 @@
 if status is-interactive
     atuin init fish | source
-    /opt/homebrew/bin/brew shellenv | source
+    uname -s | grep -q Darwin && /opt/homebrew/bin/brew shellenv | source
     # Extend the locations where fish looks for functions to
     # include "machine-specific" functions. For example, these
     # are functions not common between machines.
     set -a fish_function_path ~/.config/more_fish
 
     # Machine-specific config.
-    source ~/.config/more_fish/config.fish
+    test -e ~/.config/more_fish/config.fish && source ~/.config/more_fish/config.fish
 
     # Config the hydro prompt.
     set --global hydro_color_pwd green

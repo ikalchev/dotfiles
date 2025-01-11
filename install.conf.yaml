@@ -34,6 +34,5 @@
       stdin: true
       stdout: true
       stderr: true
-    - [chsh -s $(which fish)]
     - [fisher install jorgebucaran/hydro]
     
