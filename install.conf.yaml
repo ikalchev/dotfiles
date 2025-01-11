@@ -6,8 +6,8 @@
 
 - link:
     ~/.vimrc: vimrc
-    ~/.config/atuin:
-      path: atuin
+    ~/.config/atuin/config.toml:
+      path: atuin_config.toml
       create: true
     ~/.config/fish:
       path: fish
