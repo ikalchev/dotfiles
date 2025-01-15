@@ -12,6 +12,13 @@
     ~/.config/fish:
       path: fish
       create: true
+    ~/.config/alacritty:
+      path: alacritty
+      create: true
+    ~/.config/zed:
+      path: zed
+      create: true
+
 
 - shell:
     -

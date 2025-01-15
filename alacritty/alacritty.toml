@@ -1,0 +1,15 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/ayu_mirage.toml",
+    "~/.config/alacritty/extended.toml",
+]
+
+[font]
+normal = {"family" = "Hack Nerd Font Mono"}
+size = 13
+
+[window]
+dimensions = { columns = 120, lines = 40 }
+
+[scrolling]
+history = 30000
