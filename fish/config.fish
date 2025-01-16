@@ -1,4 +1,5 @@
 if status is-interactive
+    fish_add_path /usr/local/bin
     atuin init fish | source
     uname -s | grep -q Darwin && /opt/homebrew/bin/brew shellenv | source
     starship init fish | source

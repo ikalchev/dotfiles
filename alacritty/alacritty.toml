@@ -13,3 +13,8 @@ dimensions = { columns = 120, lines = 40 }
 
 [scrolling]
 history = 30000
+
+[terminal]
+
+[terminal.shell]
+program = "/opt/homebrew/bin/fish"
