@@ -15,7 +15,7 @@
     ~/.config/alacritty:
       path: alacritty
       create: true
-    ~/.config/zed:
+    ~/.config/zed/settings.json:
       path: zed
       create: true
 
@@ -30,6 +30,10 @@
     - [fish]
     -
       command: "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
+      stdin: true
+      stdout: true
+      stderr: true
+    - command: curl -sS https://starship.rs/install.sh | sh
       stdin: true
       stdout: true
       stderr: true
