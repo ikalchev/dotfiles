@@ -16,6 +16,22 @@
     "dark": "Ayu Mirage"
   },
   "preferred_line_length": 90,
+
+  // Remove the < > buttons from the tab bar
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+
+  // Show file type icons in the tab bar. Also color them according to the
+  // git status.
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+
+  "tab_size": 4,
+
   "languages": {
     "Python": {
       "language_servers": ["pyright", "ruff"],
