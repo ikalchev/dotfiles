@@ -18,6 +18,7 @@
     ~/.config/zed/settings.json:
       path: zed
       create: true
+    ~/.config/starship.toml: starship.toml
 
 
 - shell:
@@ -33,7 +34,8 @@
       stdin: true
       stdout: true
       stderr: true
-    - command: curl -sS https://starship.rs/install.sh | sh
+    - 
+      command: curl -sS https://starship.rs/install.sh | sh
       stdin: true
       stdout: true
       stderr: true
