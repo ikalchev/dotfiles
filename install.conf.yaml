@@ -54,5 +54,4 @@
       stdin: true
       stdout: true
       stderr: true
-    - [fisher install jorgebucaran/hydro]
     

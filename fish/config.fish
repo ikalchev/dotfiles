@@ -11,10 +11,4 @@ if status is-interactive
 
     # Machine-specific config.
     test -e ~/.config/more_fish/config.fish && source ~/.config/more_fish/config.fish
-
-    # Config the hydro prompt.
-    set --global hydro_color_pwd green
-    set --global hydro_color_git cyan
-    set --global hydro_color_prompt bryellow
-    set --global hydro_multiline true
 end
