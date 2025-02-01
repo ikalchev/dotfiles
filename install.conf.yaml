@@ -50,7 +50,7 @@
       stdout: true
       stderr: true
     -
-      command: "uname -s | grep -q Linux && apt install eza bat"
+      command: "uname -s | grep -q Linux && sudo apt install eza bat"
       stdin: true
       stdout: true
       stderr: true
