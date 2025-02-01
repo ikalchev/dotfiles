@@ -9,6 +9,9 @@ if status is-interactive
     # are functions not common between machines.
     set -a fish_function_path ~/.config/more_fish
 
+    # Remove the fish greeting.
+    set -g fish_greeting    
+
     # Machine-specific config.
     test -e ~/.config/more_fish/config.fish && source ~/.config/more_fish/config.fish
 end
