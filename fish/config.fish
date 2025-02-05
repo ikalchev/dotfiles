@@ -3,6 +3,7 @@ if status is-interactive
     atuin init fish | source
     uname -s | grep -q Darwin && /opt/homebrew/bin/brew shellenv | source
     starship init fish | source
+    source "~/.cargo/env.fish"
 
     # Extend the locations where fish looks for functions to
     # include "machine-specific" functions. For example, these

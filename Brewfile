@@ -1,8 +1,6 @@
 tap "homebrew/bundle"
-brew "bat"
 brew "cmake"
 brew "direnv"
-brew "eza"
 brew "fish"
 brew "python@3.13"
 brew "zola"
