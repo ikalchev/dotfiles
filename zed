@@ -7,65 +7,79 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "font_family": "Hack Nerd Font Mono",
-  "ui_font_size": 14,
-  "buffer_font_size": 14,
-  "theme": {
-    "mode": "system",
-    "light": "Ayu Mirage",
-    "dark": "Ayu Mirage"
-  },
-  "preferred_line_length": 90,
-
-  // Remove the < > buttons from the tab bar
-  "tab_bar": {
-    "show": true,
-    "show_nav_history_buttons": false
-  },
-
-  // Show file type icons in the tab bar. Also color them according to the
-  // git status.
-  "tabs": {
-    "file_icons": true,
-    "git_status": true
-  },
-
-  "tab_size": 4,
-
-  "languages": {
-    "Python": {
-      "language_servers": ["pyright", "ruff"],
-      "format_on_save": "on",
-      "formatter": [
+    "ssh_connections": [
         {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
-        },
-        {
-          "language_server": {
-            "name": "ruff"
-          }
+            "host": "192.168.0.42",
+            "username": "ivan",
+            "projects": [
+                {
+                    "paths": ["~/service-catalog"]
+                }
+            ]
         }
-      ]
-    }
-  },
-  "file_scan_exclusions": [
-    "**/.git",
-    "**/.svn",
-    "**/.hg",
-    "**/.jj",
-    "**/CVS",
-    "**/.DS_Store",
-    "**/Thumbs.db",
-    "**/.classpath",
-    "**/.settings",
-    "**/.*_cache",
-    "**/.vscode",
-    "**/.github",
-    "**/__pycache__",
-    "**/venv*",
-    "**/build"
-  ]
+    ],
+    "font_family": "Hack Nerd Font Mono",
+    "ui_font_size": 14,
+    "buffer_font_size": 14,
+    "theme": {
+        "mode": "system",
+        "light": "Ayu Mirage",
+        "dark": "Ayu Mirage"
+    },
+    "preferred_line_length": 90,
+    "wrap_guides": [80, 90],
+
+    // Remove the < > buttons from the tab bar
+    "tab_bar": {
+        "show": true,
+        "show_nav_history_buttons": false
+    },
+
+    // Show file type icons in the tab bar. Also color them according to the
+    // git status.
+    "tabs": {
+        "file_icons": true,
+        "git_status": true
+    },
+
+    "tab_size": 4,
+    "show_whitespaces": "all",
+    "scroll_beyond_last_line": "off",
+
+    "languages": {
+        "Python": {
+            "language_servers": ["pyright", "ruff"],
+            "format_on_save": "on",
+            "formatter": [
+                {
+                    "code_actions": {
+                        "source.organizeImports.ruff": true,
+                        "source.fixAll.ruff": true
+                    }
+                },
+                {
+                    "language_server": {
+                        "name": "ruff"
+                    }
+                }
+            ]
+        }
+    },
+    "file_scan_exclusions": [
+        "**/.git",
+        "**/.svn",
+        "**/.hg",
+        "**/.jj",
+        "**/CVS",
+        "**/.DS_Store",
+        "**/Thumbs.db",
+        "**/.classpath",
+        "**/.settings",
+        "**/.*_cache",
+        "**/.vscode",
+        "**/.github",
+        "**/__pycache__",
+        "**/venv*",
+        "**/build"
+    ]
 }
